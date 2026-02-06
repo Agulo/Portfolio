@@ -47,7 +47,7 @@ body {
 header {
   background-color: #0d6efd;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -58,7 +58,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 nav a {
@@ -273,6 +273,15 @@ footer {
 
 /* Mobile Menu Hidden */
 @media (max-width: 768px) {
+  header{
+    padding: 0.2rem 0;
+  }
+
+  .logo-img{
+    width: 32px;
+    height: 32px;
+  }
+
   #nav_go {
     display: none;
     flex-direction: column;
@@ -287,6 +296,7 @@ footer {
 
   .menu {
     display: block;
+    font-size: 1.5rem;
   }
 }
 
