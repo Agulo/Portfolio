@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="dasboard.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="logo"><img src="IMG-20240708-WA0064.jpg" alt="Logo" class="logo-img"></div>
+        <div class="menu" id="menu">&#9776;</div>
+          <ul id="nav_go">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+
+    <section id="home">
+      <h1>Hi, Im Oluga Thovhakale</h1>
+      <p>Diploma student in Information Technology, entering the final year in 2026, 
+          with a growing foundation in software development using Java and other programming languages. 
+          Results-driven and detail-oriented, eager to gain hands-on experience through entry-level roles,
+          leaderships, or internships. Experienced in both collaborative group projects and independent
+          work, bringing strong problem-solving skills, adaptability, and a proactive approach to learning 
+          and applying new technologies. Highly motivated to contribute positively to a team, expand 
+          my practical knowledge, and grow as a skilled IT professional while making a meaningful impact
+          in any organization I join
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a developer with a current focus on Java and flutter while staring to touch on frameworks, I've 
+          used HTML, CSS, Javascript, PHP, SQL and C++ as these are thing that I leared in my years as a 
+          Information Technology student in Richfield College. Ive worked with Firebase as a backend when 
+          a login in and sign-up ended up working for a flutter app. My background is that I have stared really
+          programming in high school with a subject called Computer Application Technology (CAT) and from 
+          there seeing how HTML and CSS work making things the way I want got me interested in programming.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Property-Manager</h3>
+        <p>Simple system to help track and manage properties, by enter the number of properties you have
+          Search for properties in your storage and be able to show how many and which properties you have 
+        </p>
+        <a href="https://github.com/Agulo/Propert-Manage">GitHub = Property-Manager</a>
+      </div>
+      <div class="project-card">
+        <h3>Simple social_media (School Project)</h3>
+        <p>Simple INstagram clone but without the likes and reels it can post comment and yo even have the
+          ability to text people if they have a profile it has a database that stores all this information
+        </p>
+        <a href="https://github.com/Agulo/social_media">GitHub = social_media</a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java / C++</li>
+        <li>Simple Firebase</li>
+        <li>HTML, CSS and Javascript</li>
+        <li>Git & GitHub</li>
+        <li>Simple Flutter / Dart</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lugitovhakale@gmail.com">lugitovhakale@gmail.com</a> | 066 024 1796</p>
+      <p>LinkedIn | <a href="https://github.com/Agulo">GitHub</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 Oluga Thovhakale</p>
+    </footer>
+  </div>
+</body>
+
+<script>
+  const menu = document.getElementById('menu');
+  const nav_go = document.getElementById('nav_go');
+  menu.addEventListener('click', () => {
+    nav_go.classList.toggle('active');
+  });
+</script>
+
+</html>
