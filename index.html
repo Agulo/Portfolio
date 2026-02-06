@@ -93,7 +93,8 @@
   const nav_go = document.getElementById('nav_go');
   const navLinks = document.querySelectorAll('#nav_go li a');
 
-  menu.addEventListener('click', () => {
+  menu.addEventListener('click', (e) => {
+    e.stopPropagation();
     nav_go.classList.toggle('active');
   });
 
@@ -103,7 +104,7 @@
         nav_go.classList.remove('active');
       }
     });
-  });
+  });  
 </script>
 
 </html>
