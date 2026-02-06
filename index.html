@@ -91,8 +91,18 @@
 <script>
   const menu = document.getElementById('menu');
   const nav_go = document.getElementById('nav_go');
+  const navLinks = document.querySelectorAll('#nav_go li a');
+
   menu.addEventListener('click', () => {
     nav_go.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (nav_go.classList.contains('active')) {
+        nav_go.classList.remove('active');
+      }
+    });
   });
 </script>
 

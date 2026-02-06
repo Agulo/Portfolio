@@ -273,6 +273,23 @@ footer {
 
 /* Mobile Menu Hidden */
 @media (max-width: 768px) {
+  #nav_go {
+    display: none;
+    flex-direction: column;
+    background-color: #0d6efd;
+    width: 100%;
+    text-align: center;
+    position: absolute; 
+    top: 50px;
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  #nav_go.active {
+    display: flex;
+  }
+
   header{
     padding: 0.2rem 0;
   }
@@ -280,18 +297,6 @@ footer {
   .logo-img{
     width: 32px;
     height: 32px;
-  }
-
-  #nav_go {
-    display: none;
-    flex-direction: column;
-    background-color: #0d6efd;
-    width: 100%;
-    text-align: center;
-  }
-
-  #nav_go.active {
-    display: flex;
   }
 
   .menu {
