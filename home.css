@@ -272,7 +272,7 @@ footer {
 }
 
 /* Mobile Menu Hidden */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #nav_go {
     display: none;
     flex-direction: column;
@@ -313,7 +313,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navbar {
     height: 60px;
     position: relative;
