@@ -1,110 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluga - Developer Portfolio</title>
+    <link rel="stylesheet" href="nice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class="container">
-    <header>
-      <nav class="navbar">
-        <div class="logo"><img src="logo.jpg" alt="Logo" class="logo-img"></div>
-        <div class="menu" id="menu">&#9776;</div>
-          <ul id="nav_go">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-      </nav>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">Oluga Thovhakale</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-
+    <!-- Home Section -->
     <section id="home">
-      <h1>Hi, Im Oluga Thovhakale</h1>
-      <p>Diploma student in Information Technology, entering the final year in 2026, 
-          with a growing foundation in software development using Java and other programming languages. 
-          Results-driven and detail-oriented, eager to gain hands-on experience through entry-level roles,
-          leaderships, or internships. Experienced in both collaborative group projects and independent
-          work, bringing strong problem-solving skills, adaptability, and a proactive approach to learning 
-          and applying new technologies. Highly motivated to contribute positively to a team, expand 
-          my practical knowledge, and grow as a skilled IT professional while making a meaningful impact
-          in any organization I join
-      </p>
+        <div class="hero-content">
+            <h1>Hi, I'm Oluga</h1>
+            <p class="hero-subtitle">Developer | Problem Solver | Creative Thinker</p>
+            <p class="hero-description"> 
+                Student in Information Technology, entering the final year in 2026, 
+                with a growing foundation in software development using Java and other programming languages. 
+                Results-driven and detail-oriented, eager to gain hands-on experience through entry-level roles.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a developer with a current focus on Java and flutter while staring to touch on frameworks, I've 
-          used HTML, CSS, Javascript, PHP, SQL and C++ as these are thing that I leared in my years as a 
-          Information Technology student in Richfield College. Ive worked with Firebase as a backend when 
-          a login in and sign-up ended up working for a flutter app. My background is that I have stared really
-          programming in high school with a subject called Computer Application Technology (CAT) and from 
-          there seeing how HTML and CSS work making things the way I want got me interested in programming.
-      </p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <!-- Main About Card -->
+            <div class="about-cards-grid">
+                <div class="about-card main-card">
+                    <div class="card-icon">👨‍💻</div>
+                    <h3>About</h3>
+                    <p>
+                        I am a junior developer focusing on Java and Flutter, with some experience in HTML, CSS, JavaScript, 
+                        PHP, SQL, and C++ from my IT studies at Richfield College. I have used Firebase as a backend for a 
+                        small Flutter app with login and sign-up features. I am passionate about creating useful, user-friendly
+                        applications and growing as a developer and eventually becoming an engineer.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>My Approach</h3>
+                    <p>
+                        To achieve my goal of becoming an engineer, I focus on strengthening my core skills in Java, 
+                        Flutter, and backend development with Firebase while refining your HTML, CSS, JavaScript, and 
+                        SQL knowledge. Use GitHub for version control, and learn about APIs, testing, and deployment. 
+                        Develop an engineering mindset by studying clean architecture, design patterns, and Agile practices.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Always Growing</h3>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, from channels like Fireship
+                        on YouTube. I play Chess and enjoy solving puzzles, the pattern recognition and problem-solving 
+                        aspects of chess have helped me develop a strategic mindset that I apply to my coding projects. 
+                    </p>
+                </div>
+
+                <!-- Tech Stack Card -->
+                <div class="about-card tech-card">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="about-card stat-card-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="about-card stat-card-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Commitment</div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Property-Manager</h3>
-        <p>Simple system to help track and manage properties, by enter the number of properties you have
-          Search for properties in your storage and be able to show how many and which properties you have 
-        </p>
-        <a href="https://github.com/Agulo/Propert-Manage">GitHub = Property-Manager</a>
-      </div>
-      <div class="project-card">
-        <h3>Simple social_media (School Project)</h3>
-        <p>Simple INstagram clone but without the likes and reels it can post comment and yo even have the
-          ability to text people if they have a profile it has a database that stores all this information
-        </p>
-        <a href="https://github.com/Agulo/social_media">GitHub = social_media</a>
-      </div>
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">🏠</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Property Management System</h3>
+                        <p class="project-description">
+                            Simple system to help track and manage properties, by enter the number of properties you have
+                            Search for properties in your storage and be able to show how many and which properties you have 
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Agulo/Propert-Manage/blob/main/Property%20manage/Fun.cpp" class="project-link">
+                                <span>→</span> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Simple social_media</h3>
+                        <p class="project-description">
+                            Simple INstagram clone but without the likes and reels it can post comment and yo even have the
+                            ability to text people if they have a profile it has a database that stores all this information
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Agulo/social_media/tree/main" class="project-link">
+                                <span>→</span> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Java / C++</li>
-        <li>Simple Firebase</li>
-        <li>HTML, CSS and Javascript</li>
-        <li>Git & GitHub</li>
-        <li>Simple Flutter / Dart</li>
-      </ul>
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3><span class="skill-icon">⚙️</span> Backend Development</h3>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Authentication</li>
+                    </ul>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3><span class="skill-icon">🗄️</span> Database & Tools</h3>
+                    <ul class="skill-list">
+                        <li>Firebase</li>
+                        <li>Database Design</li>
+                        <li>SQL</li>
+                        <li>phpMyAdmin</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:lugitovhakale@gmail.com">lugitovhakale@gmail.com</a> | 066 024 1796</p>
-      <p>LinkedIn | <a href="https://github.com/Agulo">GitHub</a></p>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:oluga@example.com">lugitovhakale@gmail.com</a>
+                        </div>
+                        <!-- <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <a href="https://linkedin.com/in/oluga" target="_blank">linkedin.com/in/oluga</a>
+                        </div> -->
+                        <div class="contact-item">
+                            <span class="contact-icon">🐙</span>
+                            <a href="https://github.com/Agulo" target="_blank">github.com/Agulo</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Available for remote work</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <p>© 2026 Oluga Thovhakale</p>
+        <p>&copy; 2026 Oluga. Designed & Built with passion.</p>
     </footer>
-  </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+        }
+
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon at ${email}.`);
+            
+            event.target.reset();
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                nav.style.boxShadow = 'none';
+            } else {
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
 </body>
-
-<script>
-  const menu = document.getElementById('menu');
-  const nav_go = document.getElementById('nav_go');
-  const navLinks = document.querySelectorAll('#nav_go li a');
-
-  menu.addEventListener('click', (e) => {
-    e.stopPropagation();
-    nav_go.classList.toggle('active');
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (nav_go.classList.contains('active')) {
-        nav_go.classList.remove('active');
-      }
-    });
-  });  
-</script>
-
 </html>
