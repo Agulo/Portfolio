@@ -160,11 +160,31 @@ section:nth-child(6) { animation-delay: 0.5s; }
     align-items: center;
     justify-content: center;
     position: relative;
+    background-image: url('pics/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 8rem 0 4rem;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 14, 39, 0.7);
+    z-index: 1;
 }
 
 .hero-content {
     text-align: center;
     max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
